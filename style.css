@@ -1,0 +1,60 @@
+body {  
+    background-color: pink;
+    margin: 0;
+}
+
+#mainframe {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+#header {
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+    float:left;
+}
+#left {
+    width: 60%;
+    height: 85%;
+    background-color: green;
+    float:left;
+}
+#right {
+    width: 40%;
+    height: 85%;
+    background-color: yellow;
+    float:left;
+}
+#footer {
+    width: 100%;
+    height: 5%;
+    background-color: pink;
+    float:left;
+}
+
+.song {
+    width: 98%;
+    float:left;
+    height: 3%;
+    background-color: cyan;
+    margin: 1%;
+}
+.playback {
+    width: 10%;
+    height:100%;
+    float:left;
+    text-align: center;
+    background-color: white;
+}
+.name {
+    width: 80%;
+    height: 100%;
+    float:left;
+    background-color: aquamarine;
+}
+.checkbox {
+    width: 5%;
+    height: 80%;
+    text-align: center;
+}
