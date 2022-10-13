@@ -94,12 +94,19 @@ function render_up_down_button (x) {
     var div = document.createElement('div')
     div.classList.add('nav-container')
     var up = document.createElement('div')
-    up.innerHTML = ' up '
+    up.innerHTML = '&#9650'
+    up.onclick = () => {move_song_up(event.target)}
     up.classList.add('nav-button')
     var down = document.createElement('div')
-    down.innerHTML = ' down '
+    down.innerHTML = '&#9660'
+    down.onclick = () => {move_song_down(event.target)}
     down.classList.add('nav-button')
+    var exit = document.createElement('div')
+    exit.innerHTML = 'X'
+    exit.onclick = () => {remove_song(event.target)}
+    exit.classList.add('nav-button')
     div.appendChild(up)
     div.appendChild(down)
+    div.appendChild(exit)
     x.appendChild(div)
 }
