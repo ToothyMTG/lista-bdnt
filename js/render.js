@@ -36,6 +36,9 @@ function select_song (x) {
         parent.classList.add('song-unchecked')
         remove_from_list (base)
     } else {
+        if (Song_List.length >= 10) {
+            return
+        }
         parent.classList.remove('song-unchecked')
         parent.classList.add('song-checked')
         add_to_list (base)

@@ -19,6 +19,7 @@ body {
     height: 90%;
     background-color: green;
     float:left;
+    overflow-y: scroll;
 }
 #right {
     width: 40%;
