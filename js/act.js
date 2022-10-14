@@ -98,5 +98,23 @@ function arraymove(arr, fromIndex, toIndex) {
 }
 
 function submit_songs () {
-    
+    var fe = FormLink.split('&')
+    for (let i = 2; i < 12; i++) {
+        var en = fe[i].split('=')
+        var index = i - 2
+        en[1] = Song_List[index]        
+        if (en[1] == undefined) {
+            en[1] = ''
+        }
+        fe[i] = en[0] + '=' + en[1]
+    }
+    console.log(fe)
+    var link = '' 
+    for (let i = 0; i < fe.length; i++) {
+        link = link + fe[i] + '&'
+    }
+    link += 'submit=Submit'
+    console.log(link)
+    //window.location.replace(link)
 }
+
