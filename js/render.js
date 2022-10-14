@@ -8,7 +8,9 @@ function render_songs() {
 
         var playback = document.createElement('button')
         playback.classList.add('playback')
+        playback.onclick = () => {render_player(event.target)}
         playback.innerHTML = ">"
+        playback.value = i
         div.appendChild(playback)
 
         var name = document.createElement('div')
@@ -40,7 +42,6 @@ function select_song (x) {
     }
 }
 
-render_songs()
 
 function render_headers () {
     var header = document.getElementById('header')
@@ -89,6 +90,7 @@ function render_search () {
 }
 
 render_search()
+render_songs()
 
 function render_up_down_button (x) {
     var div = document.createElement('div')
@@ -109,4 +111,24 @@ function render_up_down_button (x) {
     div.appendChild(down)
     div.appendChild(exit)
     x.appendChild(div)
+}
+
+function render_player (x) {
+    var left = document.getElementById('left')
+    var player = document.getElementById('player')
+    id = x.value
+    var parr = x.parentElement
+    //Debug = parent
+    var one = Songs[id].link.split('?')[0]
+    var split = one.split('track/')
+    one = SpotifySRC[0] + split[1]
+    var two = player.src.split('?')[1]
+    var newSrc = one + SpotifySRC[1]
+    player.src = newSrc
+    left.insertBefore(player,parr)
+    player.style.display = 'block'
+    if (split[1] == undefined) {
+        player.style.display = 'none'
+        x.style.backgroundColor = 'red'
+    }
 }

@@ -25,6 +25,7 @@ function remove_from_list (x) {
 }
 
 function do_search(x) {
+    var player = document.getElementById('player').style.display = 'none'
     var songs = document.getElementsByClassName('song')
     for (let i = 0; i < songs.length; i++) {
         var phrase_check = songs[i].children[1].innerHTML
