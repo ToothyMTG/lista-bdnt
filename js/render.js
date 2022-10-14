@@ -36,12 +36,18 @@ function select_song (x) {
         parent.classList.add('song-unchecked')
         remove_from_list (base)
     } else {
-        if (Song_List.length >= 10) {
+        if (Song_List.length >= voteLimit) {
             return
         }
         parent.classList.remove('song-unchecked')
         parent.classList.add('song-checked')
         add_to_list (base)
+    }
+    var submit = document.getElementById('submit')
+    if (Song_List.length > 0) {
+        submit.style.display = 'block'
+    } else {
+        submit.style.display = 'none'
     }
 }
 
@@ -135,3 +141,15 @@ function render_player (x) {
         x.style.backgroundColor = 'red'
     }
 }
+
+function render_submit () {
+    var right = document.getElementById('right')
+    var submit = document.createElement('button')
+    submit.innerHTML = 'Wyślij'
+    submit.id = 'submit'
+    submit.onclick = () => {submit_songs()}
+    submit.classList.add('submit-button')
+    right.appendChild(submit)
+}
+
+render_submit ()

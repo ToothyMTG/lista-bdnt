@@ -109,3 +109,13 @@ body {
     height: 10%;
     float:left
 }
+
+.submit-button {
+    width: 50%;
+    margin-left: 25%;
+    float:left;
+    display: none;
+}
+.submit-button:hover {
+    background-color: red;
+}
