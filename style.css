@@ -1,0 +1,121 @@
+body {  
+    background-color: pink;
+    margin: 0;
+}
+
+#mainframe {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+#header {
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+    float:left;
+}
+#left {
+    width: 60%;
+    height: 90%;
+    background-color: green;
+    float:left;
+    overflow-y: scroll;
+}
+#right {
+    width: 40%;
+    height: 90%;
+    background-color: yellow;
+    float:left;
+}
+.right-list {
+    background-color: red;
+    margin: 2.5%;
+    width: 95%;
+    height: 60%;
+}
+.right-list div {
+    float:left;
+    
+}
+#footer {
+    width: 100%;
+    height: 5%;
+    display: none;
+    background-color: pink;
+    float:left;
+}
+
+.song {
+    width: 98%;
+    float:left;
+    height: 3%;
+    background-color: cyan;
+    margin: 1%;
+}
+.song:hover {
+    background-color: red;
+}
+.song-unchecked {
+    background-color: cyan;
+}
+.song-checked {
+    background-color: grey;
+}
+.playback {
+    width: 10%;
+    height:100%;
+    float:left;
+    text-align: center;
+    background-color: white;
+}
+.playback:hover {
+    background-color: red;
+}
+.name {
+    width: 85%;
+    padding-left: 5%;
+    height: 100%;
+    float:left;
+}
+.checkbox {
+    width: 5%;
+    height: 80%;
+    text-align: center;
+}
+
+#search-box {
+    width: 90%;
+    height: 3%;
+    margin: 4%;
+    text-align: center;
+}
+
+.nav-button {
+    width: 33.333%;
+    height: 100%;
+    float:left;
+    background-color: white;
+}
+.nav-button:hover {background-color: green;}
+.nav-container {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+#player {
+    display:none;
+    width: 100%;
+    height: 10%;
+    float:left
+}
+
+.submit-button {
+    width: 50%;
+    margin-left: 25%;
+    float:left;
+    display: none;
+}
+.submit-button:hover {
+    background-color: red;
+}
