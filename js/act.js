@@ -1,5 +1,5 @@
 function add_to_list (x) {
-    right = document.getElementById('right-list')
+    /*right = document.getElementById('right-list')
     var div = document.createElement('div')
     div.classList.add('song-list-box')
     div.style.width = '100%'
@@ -8,20 +8,22 @@ function add_to_list (x) {
     var song = document.createElement('div')
     song.classList.add('song-name')
     song.innerHTML = x.innerHTML
-    div.appendChild(song)
+    div.appendChild(song)*/
     //console.log(x.innerHTML)
     Song_List.push(x.innerHTML)
+    render_song_list_items()
     //console.log(Song_List)  
 }
 
 function remove_from_list (x) {
-    right = document.getElementById('right-list')
+    //right = document.getElementById('right-list')
     //console.log(x.innerHTML)
     index = Song_List.indexOf(x.innerHTML)
     //console.log(index)
     Song_List.splice(index,1)
     //console.log(Song_List)
-    right.children[index].remove()
+    //right.children[index].remove()
+    render_song_list_items()
 }
 
 function do_search(x) {
@@ -51,8 +53,9 @@ function move_song_up(x) {
     arraymove(Song_List,S.index,newindex)
     //console.log(Song_List)
     //console.log(S)
-    var rightlist = document.getElementById('right-list')
-    rightlist.insertBefore(rightlist.children[S.index],rightlist.children[newindex])
+    //var rightlist = document.getElementById('right-list')
+    //rightlist.insertBefore(rightlist.children[S.index],rightlist.children[newindex])
+    render_song_list_items()
 }
 
 function move_song_down(x) {
@@ -62,15 +65,16 @@ function move_song_down(x) {
         newindex = Song_List.length - 1
     }
     arraymove(Song_List,S.index,newindex)
-    var rightlist = document.getElementById('right-list')
-    rightlist.insertBefore(rightlist.children[newindex],rightlist.children[S.index])
+    //var rightlist = document.getElementById('right-list')
+    //rightlist.insertBefore(rightlist.children[newindex],rightlist.children[S.index])
+    render_song_list_items ()
 }
 
 function remove_song(x) {
     get_song_data(x)
-    var rightlist = document.getElementById('right-list')
+    //var rightlist = document.getElementById('right-list')
     Song_List.splice(S.index,1)
-    rightlist.children[S.index].remove()
+    //rightlist.children[S.index].remove()
     var songs = document.getElementsByClassName('song')
     for (let i = 0; i < songs.length; i++) {
         if (songs[i].innerHTML.includes(S.songname)) {
@@ -79,7 +83,7 @@ function remove_song(x) {
             //console.log('ha!')
         } 
     }
-
+    render_song_list_items()
 }
 
 function get_song_data(y) {
@@ -98,7 +102,13 @@ function arraymove(arr, fromIndex, toIndex) {
 }
 
 function submit_songs () {
+    var nick = document.getElementById('nick-input').value 
+    //console.log(nick)
     var fe = FormLink.split('&')
+    var nicksplit = fe[1].split('=')
+    nicksplit[1] = nick
+    fe[1] = nicksplit[0] + "=" + nicksplit[1]
+    //console.log(fe[1])
     for (let i = 2; i < 12; i++) {
         var en = fe[i].split('=')
         var index = i - 2
@@ -108,13 +118,34 @@ function submit_songs () {
         }
         fe[i] = en[0] + '=' + en[1]
     }
-    console.log(fe)
+    //console.log(fe)
     var link = '' 
     for (let i = 0; i < fe.length; i++) {
         link = link + fe[i] + '&'
     }
     link += 'submit=Submit'
-    console.log(link)
-    //window.location.replace(link)
+    //console.log(link)
+    window.location.replace(link)
 }
 
+function switcher () {
+    var switcherr = document.getElementById('switcher')
+    var left = document.getElementById('left')
+    var right = document.getElementById('right')
+    if (SwitcherState == 1) {
+        switcherr.classList.remove('switcher-1')
+        switcherr.classList.add('switcher-2')
+        left.style.display = 'none'
+        right.style.display = 'block'
+        SwitcherState = 2
+        return
+    }
+    if (SwitcherState == 2) {
+        switcherr.classList.remove('switcher-2')
+        switcherr.classList.add('switcher-1')
+        left.style.display = 'block'
+        right.style.display = 'none'
+        SwitcherState = 1
+        return
+    }
+}

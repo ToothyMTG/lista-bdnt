@@ -9,7 +9,7 @@ function render_songs() {
         var playback = document.createElement('button')
         playback.classList.add('playback')
         playback.onclick = () => {render_player(event.target)}
-        playback.innerHTML = ">"
+        playback.innerHTML = "&#9658;"
         playback.value = i
         div.appendChild(playback)
 
@@ -43,12 +43,38 @@ function select_song (x) {
         parent.classList.add('song-checked')
         add_to_list (base)
     }
+}
+
+function render_song_list_items() {
+    right = document.getElementById('right-list')
+    right.innerHTML = ''
+    for (let i = 0; i < Song_List.length; i++) {
+        var div = document.createElement('div')
+        div.classList.add('song-list-box')
+        div.style.width = '100%'
+        render_up_down_button(div,(i + 1))
+        right.appendChild(div)
+        var lp = document.createElement('div')
+        lp.innerHTML = (i+1) + ". "
+        //div.appendChild(lp)
+        var song = document.createElement('div')
+        song.classList.add('song-name')
+        song.innerHTML = Song_List[i]
+        div.appendChild(song)
+    }
     var submit = document.getElementById('submit')
+    var disclaimer = document.getElementById('disclaimer')
+    var nickinput = document.getElementById('nick-input')
     if (Song_List.length > 0) {
         submit.style.display = 'block'
+        disclaimer.style.display = 'block'
+        nickinput.style.display = 'block'
     } else {
         submit.style.display = 'none'
+        disclaimer.style.display = 'none'
+        nickinput.style.display = 'none'
     }
+    
 }
 
 
@@ -72,6 +98,15 @@ function render_list () {
     }
     console.log(Song_List)
 }
+
+function render_list_preheader() {
+    var right = document.getElementById('right')
+    var div = document.createElement('div')
+    div.id = 'preheader'
+    div.innerHTML = ListHeader
+    right.appendChild(div)
+}
+render_list_preheader ()
 
 function render_song_list () {
     var right = document.getElementById('right')
@@ -101,9 +136,12 @@ function render_search () {
 render_search()
 render_songs()
 
-function render_up_down_button (x) {
+function render_up_down_button (x, y) {
     var div = document.createElement('div')
     div.classList.add('nav-container')
+    var lp = document.createElement('div')
+    lp.innerHTML = y + '.'
+    lp.classList.add('nav-button')
     var up = document.createElement('div')
     up.innerHTML = '&#9650'
     up.onclick = () => {move_song_up(event.target)}
@@ -116,6 +154,7 @@ function render_up_down_button (x) {
     exit.innerHTML = 'X'
     exit.onclick = () => {remove_song(event.target)}
     exit.classList.add('nav-button')
+    div.appendChild(lp)
     div.appendChild(up)
     div.appendChild(down)
     div.appendChild(exit)
@@ -144,6 +183,15 @@ function render_player (x) {
 
 function render_submit () {
     var right = document.getElementById('right')
+    var div = document.createElement('p')
+    div.id = 'disclaimer'
+    div.innerHTML = Disclaimer
+    right.appendChild(div)
+    var input = document.createElement('input')
+    input.type = 'text'
+    input.id = 'nick-input'
+    input.placeholder = 'Wpisz swój nick'
+    right.appendChild(input)
     var submit = document.createElement('button')
     submit.innerHTML = 'Wyślij'
     submit.id = 'submit'
@@ -153,3 +201,14 @@ function render_submit () {
 }
 
 render_submit ()
+
+function render_switcher () {
+    var button = document.createElement('button')
+    button.classList.add('switcher')
+    button.classList.add('switcher-1')
+    button.id = 'switcher'
+    SwitcherState = 1
+    button.onclick = () => {switcher()}
+    mainframe.appendChild(button)
+}
+render_switcher ()
