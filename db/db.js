@@ -1,6 +1,8 @@
 Header = 'Top Discorda 2137'
 Subheader = 'Make Top, not Kek'
 voteLimit = 10
+ListHeader = 'Pońzej znajdują się piosenki, które wybrałeś. Poukładaj je w kolejności od najlepszej do najgorszej. Będzie to miało znaczenie. Ale nie musi.'
+Disclaimer = 'Po naciśnięciu przycisku "Wyślij" zostaniesz przeniesiony do ankiety Google Form z wypełnionymi wartościami. Zatwierdź tam swój wybór!'
 Source = [
     'De Staat,Witch Doctor,https://open.spotify.com/track/3rSYcaSCxkKU4SpEVXQgFe?si=333c5bb91bae4d18',
     'De Staat,Danger,https://open.spotify.com/track/4ndEVf5VBLF6R50eitmnNz?si=331a1089d32d45ab',

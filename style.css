@@ -1,79 +1,146 @@
-body {  
-    background-color: pink;
-    margin: 0;
+:root {
+    --yellow:#d8fd35;
+    --green:#8dc87b;
+    --orange: #f95f1f;
 }
 
+body {  
+    background-color: white;
+    font-family: "Neue World",serif;
+    margin: 0;
+    overflow: hidden;
+}
 #mainframe {
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-color: white;
 }
+
+@media (orientation: landscape) {
+    #mainframe {
+        font-size: 1.7vh;
+    }
+    #left {
+        width: 60%;
+        height: 90%;
+        background-color: white;
+        float: left;
+        overflow-y: scroll;
+    }
+    #right {
+        width: 40%;
+        float:left;
+        background-color: white;
+        display: block;
+        height: 90%;
+    }
+    .song {
+        line-height: 250%;
+    }
+    .switcher {
+        display: none;
+    }
+}
+@media (orientation: portrait) {
+    #mainframe {
+        font-size: 1.7vh;
+    }
+    #left {
+        width: 100%;
+        height: 90%;
+        background-color: white;
+        float:left;
+        overflow-y: scroll;
+        overflow-x: none;
+    }    
+    #right {
+        width: 100%;
+        height: 90%;
+        background-color: white;
+        float:left;
+        display: none;
+    }
+    .song {
+        line-height: 250%;
+    }
+}
+
 #header {
     width: 100%;
     height: 10%;
-    background-color: blue;
+    background-color: white;
     float:left;
+    text-align: center;
 }
-#left {
-    width: 60%;
-    height: 90%;
-    background-color: green;
-    float:left;
-    overflow-y: scroll;
-}
-#right {
-    width: 40%;
-    height: 90%;
-    background-color: yellow;
-    float:left;
+
+#header h1 {
+    margin: auto;
+    
 }
 .right-list {
-    background-color: red;
+    background-color:  var(--yellow);
     margin: 2.5%;
     width: 95%;
     height: 60%;
 }
 .right-list div {
     float:left;
-    
+}
+
+.song-name {
+    height: 5%;
+    width: 100%;
+    background-color: var(--green);
+    margin-bottom: 2%;
 }
 #footer {
     width: 100%;
     height: 5%;
     display: none;
-    background-color: pink;
+    background-color: white;
     float:left;
+}
+#nick-input {
+    width: 40%;
+    margin-left: 30%;
+    float:left;
+    text-align: center;
+    height: 5%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    display: none;
 }
 
 .song {
     width: 98%;
     float:left;
-    height: 3%;
-    background-color: cyan;
+    height: 5%;
+    background-color: var(--orange);
     margin: 1%;
 }
 .song:hover {
-    background-color: red;
+    background-color: var(--orange);
 }
 .song-unchecked {
-    background-color: cyan;
+    background-color: var(--yellow);
 }
 .song-checked {
-    background-color: grey;
+    background-color: var(--green);
 }
 .playback {
     width: 10%;
     height:100%;
     float:left;
+    border-radius: 25%;
     text-align: center;
-    background-color: white;
+    background-color: var(--yellow);
 }
 .playback:hover {
-    background-color: red;
+    background-color: var(--orange);
 }
 .name {
     width: 85%;
-    padding-left: 5%;
+    padding-left: 2%;
     height: 100%;
     float:left;
 }
@@ -85,29 +152,33 @@ body {
 
 #search-box {
     width: 90%;
+    border-radius: 5%;
     height: 3%;
     margin: 4%;
     text-align: center;
 }
 
 .nav-button {
-    width: 33.333%;
+    width: 10%;
     height: 100%;
-    float:left;
-    background-color: white;
+    float: left;
 }
-.nav-button:hover {background-color: green;}
+
+.nav-button:hover {color: var(--orange);background-color: var(--yellow);}
 .nav-container {
-    width: 30%;
+    width: 100%;
     height: 100%;
     text-align: center;
+    background-color: var(--green);
 }
 
 #player {
     display:none;
-    width: 100%;
+    width: 98%;
     height: 10%;
-    float:left
+    float:left;
+    margin-left: 1%;
+    margin-right: 1%
 }
 
 .submit-button {
@@ -115,7 +186,47 @@ body {
     margin-left: 25%;
     float:left;
     display: none;
+    height: 5%;
 }
+
+#preheader {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    font-weight: bold;
+}
+#disclaimer {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    color: var(--orange);
+    font-weight: bold;
+    display: none;
+}
+
 .submit-button:hover {
-    background-color: red;
+    background-color: var(--orange);
+}
+
+.switcher {
+    position: absolute;
+    top: 5%;
+    width: 10vw;
+    height: 5%;
+    background-color: #f95f1f;
+}
+.switcher:hover {
+    background-color: var(--green);
+}
+
+.switcher-1 {
+    left: 90vw;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.switcher-2 {
+    left: 0vw;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
 }
