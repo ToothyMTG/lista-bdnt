@@ -1,6 +1,6 @@
 Header = 'Top Discorda 2137'
 Subheader = 'Make Top, not Kek'
-voteLimit = 10
+voteLimit = 20
 ListHeader = 'Pońzej znajdują się piosenki, które wybrałeś. Poukładaj je w kolejności od najlepszej do najgorszej. Będzie to miało znaczenie. Ale nie musi.'
 Disclaimer = 'Po naciśnięciu przycisku "Wyślij" zostaniesz przeniesiony do ankiety Google Form z wypełnionymi wartościami. Zatwierdź tam swój wybór!'
 Source = [
