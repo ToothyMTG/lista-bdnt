@@ -104,6 +104,11 @@ function render_list_preheader() {
     var div = document.createElement('div')
     div.id = 'preheader'
     div.innerHTML = ListHeader
+    var link = document.createElement('a')
+    link.classList.add('rules-link')
+    link.href = RulesLink
+    link.innerHTML = 'Regulamin'
+    div.appendChild(link)
     right.appendChild(div)
 }
 render_list_preheader ()
