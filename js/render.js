@@ -107,6 +107,7 @@ function render_list_preheader() {
     var link = document.createElement('a')
     link.classList.add('rules-link')
     link.href = RulesLink
+    link.target = '_blank'
     link.innerHTML = 'Regulamin'
     div.appendChild(link)
     right.appendChild(div)
