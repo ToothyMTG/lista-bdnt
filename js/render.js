@@ -65,7 +65,7 @@ function render_song_list_items() {
     var submit = document.getElementById('submit')
     var disclaimer = document.getElementById('disclaimer')
     var nickinput = document.getElementById('nick-input')
-    if (Song_List.length > 0) {
+    if (Song_List.length > 4) {
         submit.style.display = 'block'
         disclaimer.style.display = 'block'
         nickinput.style.display = 'block'
