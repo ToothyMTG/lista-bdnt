@@ -85,12 +85,13 @@ body {
 
 #header h1 {
     margin: auto;
-    margin-top: 1%;
     padding: 0;
+    line-height:200%;
 }
 #header h2 {
     margin: auto;
     padding: 0;
+    line-height: 60%;
 }
 
 .right-list {
