@@ -109,7 +109,7 @@ function submit_songs () {
     nicksplit[1] = nick
     fe[1] = nicksplit[0] + "=" + nicksplit[1]
     //console.log(fe[1])
-    for (let i = 2; i < 12; i++) {
+    for (let i = 2; i < 22; i++) {
         var en = fe[i].split('=')
         var index = i - 2
         en[1] = Song_List[index]        
