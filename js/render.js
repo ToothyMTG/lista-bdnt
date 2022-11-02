@@ -36,9 +36,9 @@ function select_song (x) {
         parent.classList.add('song-unchecked')
         remove_from_list (base)
     } else {
-        if (Song_List.length >= voteLimit) {
-            return
-        }
+        //if (Song_List.length >= voteLimit) {
+        //    return
+        //}
         parent.classList.remove('song-unchecked')
         parent.classList.add('song-checked')
         add_to_list (base)
@@ -65,7 +65,7 @@ function render_song_list_items() {
     var submit = document.getElementById('submit')
     var disclaimer = document.getElementById('disclaimer')
     var nickinput = document.getElementById('nick-input')
-    if (Song_List.length > 4) {
+    if ((Song_List.length >= voteMinimum) && (Song_List.length <= voteLimit)) {
         submit.style.display = 'block'
         disclaimer.style.display = 'block'
         nickinput.style.display = 'block'

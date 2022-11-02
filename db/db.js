@@ -1,5 +1,6 @@
 Header = 'Byle do Nowego PL21'
 Subheader = 'Make Top, not Kek'
+voteMinimum = 5
 voteLimit = 20
 ListHeader = 'Poniżej znajdują się piosenki, które wybrałeś. Poukładaj je w kolejności od najlepszej do najgorszej.'
 Disclaimer = 'Po naciśnięciu przycisku "Wyślij" zostaniesz przeniesiony do ankiety Google Form z wypełnionymi wartościami. Zatwierdź tam swój wybór!'
