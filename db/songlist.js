@@ -8,7 +8,7 @@ SongsSRC = [
 'Aga Zaryan|MIŁOŚĆ|https://open.spotify.com/track/5mq5R7GKOSeaCgDYwdDShd',
 'Aga Zaryan i Grzegorz Turnau|TO JEDNO|https://open.spotify.com/track/4uihXMNBxSLdC4SDSJlEc4',
 'Agata Karczewska|FOOL|https://open.spotify.com/track/3Etwhnob8mKRuqZ08dXIPD',
-'Akurat|DO PROSTEGO CZŁOWIEKA|https://open.spotify.com/track/7mCisJ6kpZmSiVZgKJbbAk?si=2c33ca02b3bb4d9c',
+'Akurat|DO PROSTEGO CZŁOWIEKA|',
 'Akurat|LUBIĘ MÓWIĆ Z TOBĄ|',
 'Akurat|TYLKO NAJWIĘKSI|',
 'Albo Inaczej feat. Muniek Staszczyk|CO TO ZA MIEJSCE?|https://open.spotify.com/track/3G7HHKWKHQbwCS964J4waX',
