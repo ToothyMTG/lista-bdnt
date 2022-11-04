@@ -284,3 +284,14 @@ body {
     border-bottom-left-radius: 100%;
     border-top-left-radius: 100%;
 }
+
+.lp-change-input {
+    position:fixed;
+    width: 6%;
+    height: 4%;
+    top: 48%;
+    left: 47%;
+    font-size: 300%;
+    text-align: center;
+    background-color: var(--yellow);
+}

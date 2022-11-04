@@ -96,7 +96,6 @@ function render_list () {
     } else {
         Song_List = JSON.parse(localStorage.list)
     }
-    console.log(Song_List)
 }
 
 function render_list_preheader() {
@@ -147,6 +146,7 @@ function render_up_down_button (x, y) {
     div.classList.add('nav-container')
     var lp = document.createElement('div')
     lp.innerHTML = y + '.'
+    lp.onclick = () => {render_lp_selector(event.target)}
     lp.classList.add('nav-button')
     var up = document.createElement('div')
     up.innerHTML = '&#9650'
@@ -218,3 +218,39 @@ function render_switcher () {
     mainframe.appendChild(button)
 }
 render_switcher ()
+
+function render_lp_selector(x) {
+    var listLP = document.getElementsByClassName('nav-container')
+    var oldLP
+    for (let i = 0; i < listLP.length; i++) {
+        if (listLP[i].children[0] == x) {
+            oldLP = i
+        } 
+    }
+    var oldfield = document.getElementsByClassName('lp-change-input')[0]
+    if (oldfield != undefined) {
+        oldfield.remove()
+    }
+    var input = document.createElement('input')
+    input.type = 'text'
+    input.classList.add('lp-change-input')
+    mainframe.appendChild(input)
+    input.focus()
+    input.onkeydown = x => {
+        if (x.key == 'Enter') {
+            if (input.value == '') {
+                input.remove()
+            }
+            if ((input.value < 1) || (input.value != Number(input.value) ) ) {
+                input.value = ''
+                return
+            }
+            arraymove(Song_List, oldLP, (input.value - 1))
+            render_song_list_items()
+            input.remove()
+        }
+        if (x.key == 'Escape') {
+            input.remove()
+        }
+    }
+}
