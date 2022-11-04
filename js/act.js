@@ -149,3 +149,19 @@ function switcher () {
         return
     }
 }
+
+function save_state () {
+    localStorage.listabdnt = JSON.stringify(Song_List)
+}
+
+function load_state() {
+    var vals = JSON.parse(localStorage.listabdnt)
+    var songs = document.getElementsByClassName('name')
+    for (let i = 0; i < vals.length; i++) {
+        for (let x = 0; x < songs.length; x++) {
+            if (songs[x].innerHTML == vals[i]) {
+                songs[x].click()
+            } 
+        }
+    }
+}

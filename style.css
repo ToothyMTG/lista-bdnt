@@ -107,7 +107,8 @@ body {
 
 .song-name {
     height: 5%;
-    width: 100%;
+    width: 80%;
+    float:left;
     background-color: white;
     border-bottom: 1px solid black;
 }
@@ -192,16 +193,18 @@ body {
 }
 
 .nav-button {
-    width: 10%;
+    width: 25%;
     height: 100%;
     float: left;
 }
 
 .nav-button:hover {color: white;background-color: var(--orange);}
 .nav-container {
-    width: 100%;
+    width: 15%;
+    float:left;
     height: 100%;
     text-align: center;
+    margin-right: 1%;
 }
 
 #player {
@@ -280,4 +283,15 @@ body {
     left: 0vw;
     border-bottom-left-radius: 100%;
     border-top-left-radius: 100%;
+}
+
+.lp-change-input {
+    position:fixed;
+    width: 6%;
+    height: 4%;
+    top: 48%;
+    left: 47%;
+    font-size: 300%;
+    text-align: center;
+    background-color: var(--yellow);
 }
