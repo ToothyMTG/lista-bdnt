@@ -549,7 +549,7 @@ SongsSRC = [
 'Natalia Przybysz|NIEBIESKI|https://open.spotify.com/track/0zeJ7NZ7Nz06UtwunkzvQx',
 'Natalia Przybysz|OGIEŃ|https://open.spotify.com/track/4o4XhzsMXjFMRvNn4VVfX9',
 'Natalia Przybysz|ZEW|https://open.spotify.com/track/1rXTQ8TgC9R6ENxFwXMZyK',
-'Negatyw|AMSTERDAM|https://open.spotify.com/track/454I78HEySdcHE8fcVabTb',
+'Negatyw|AMSTERDAM|',
 'Negatyw|LUBIĘ WAS|',
 'Nocny Kochanek|KOŃ NA BIAŁYM RYCERZU|https://open.spotify.com/track/1uK7wlgLBgaXQ6s7ZLYEqV',
 'Nosowska, Grabaż, Rojek|PROSTA RZECZ|',

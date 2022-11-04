@@ -74,7 +74,7 @@ function render_song_list_items() {
         disclaimer.style.display = 'none'
         nickinput.style.display = 'none'
     }
-    
+    save_state()
 }
 
 
