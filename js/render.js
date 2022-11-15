@@ -15,7 +15,8 @@ function render_songs() {
 
         var name = document.createElement('div')
         name.classList.add('name')
-        name.innerHTML = Songs[i].artist + ' - ' + Songs[i].name
+        name.innerHTML = '<b>' + Songs[i].artist + '</b><br>' + Songs[i].name
+        name.value = Songs[i].artist + ' - ' + Songs[i].name
         name.onclick = () => {
             select_song(event.target)
         }
@@ -30,6 +31,9 @@ function render_songs() {
 
 function select_song (x) {
     var base = x
+    if (base.value == undefined) {
+        base = base.parentElement
+    }
     var parent = base.parentElement
     if (parent.classList[1] == 'song-checked') {
         parent.classList.remove('song-checked')
@@ -253,4 +257,22 @@ function render_lp_selector(x) {
             input.remove()
         }
     }
+}
+
+function formatter(x,y) {
+    V = {}
+    if (y == 1) {
+        V.old = x
+        var val = x.innerHTML.split('<br>')
+        var newval = val[0].split('<b>')[1].split('</b>')[0] + ' - ' + val[1]
+        V.new = newval
+    }
+    if (y == 2) {
+        V.old = x
+        var val = x.split('<br>')
+        var newval = val[0] + ' ' + val[1]
+        V.new = newval
+        V.html = val[0] + '\n' + val[1]
+    }
+    console.log(V)
 }
