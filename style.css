@@ -6,7 +6,7 @@
 
 body {  
     background-color: white;
-    font-family: "Neue World",serif;
+    font-family: SFProDisplay,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color emoji;
     margin: 0;
     overflow: hidden;
 }
@@ -35,7 +35,7 @@ body {
         height: 90%;
     }
     .song {
-        line-height: 275%;
+        line-height: 180%;
     }
     .switcher {
         display: none;
@@ -64,7 +64,7 @@ body {
         display: none;
     }
     .song {
-        line-height: 275%;
+        line-height: 180%;
     }
     #header {
         background-size:cover;
@@ -137,11 +137,12 @@ body {
 .song {
     width: 98%;
     float:left;
-    height: 5%;
+    height:7%;
     background-color: var(--orange);
     margin-left: 1%;
     margin-right: 1%;
     border-bottom: 1px solid black;
+    display:flex;
 }
 .song:hover {
     background-color: var(--orange);

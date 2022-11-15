@@ -10,7 +10,8 @@ function add_to_list (x) {
     song.innerHTML = x.innerHTML
     div.appendChild(song)*/
     //console.log(x.innerHTML)
-    Song_List.push(x.innerHTML)
+    //formatter(x,1)
+    Song_List.push(x.value)
     render_song_list_items()
     //console.log(Song_List)  
 }
@@ -18,7 +19,7 @@ function add_to_list (x) {
 function remove_from_list (x) {
     //right = document.getElementById('right-list')
     //console.log(x.innerHTML)
-    index = Song_List.indexOf(x.innerHTML)
+    index = Song_List.indexOf(x.value)
     //console.log(index)
     Song_List.splice(index,1)
     //console.log(Song_List)
@@ -30,7 +31,7 @@ function do_search(x) {
     var player = document.getElementById('player').style.display = 'none'
     var songs = document.getElementsByClassName('song')
     for (let i = 0; i < songs.length; i++) {
-        var phrase_check = songs[i].children[1].innerHTML
+        var phrase_check = songs[i].children[1].value
         var phrase_lower = phrase_check.toLowerCase()
         var phrase_upper = phrase_check.toUpperCase()
         //console.log(phrase_lower)
@@ -77,7 +78,7 @@ function remove_song(x) {
     //rightlist.children[S.index].remove()
     var songs = document.getElementsByClassName('song')
     for (let i = 0; i < songs.length; i++) {
-        if (songs[i].innerHTML.includes(S.songname)) {
+        if (songs[i].children[1].value == S.songname) {
             songs[i].classList.remove('song-checked')
             songs[i].classList.add('song-unchecked')
             //console.log('ha!')
@@ -159,7 +160,7 @@ function load_state() {
     var songs = document.getElementsByClassName('name')
     for (let i = 0; i < vals.length; i++) {
         for (let x = 0; x < songs.length; x++) {
-            if (songs[x].innerHTML == vals[i]) {
+            if (songs[x].value == vals[i]) {
                 songs[x].click()
             } 
         }
