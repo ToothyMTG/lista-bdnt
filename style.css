@@ -137,7 +137,7 @@ body {
 .song {
     width: 98%;
     float:left;
-    height:7%;
+    height:10%;
     background-color: var(--orange);
     margin-left: 1%;
     margin-right: 1%;
@@ -145,7 +145,7 @@ body {
     display:flex;
 }
 .song:hover {
-    background-color: var(--orange);
+    background-color: var(--yellow);
 }
 .song-unchecked {
     background-color: white;
@@ -167,7 +167,7 @@ body {
     background-color: lightgray;
 }
 .playback:hover {
-    background-color: var(--yellow);
+    background-color: var(--orange);
 }
 .name {
     width: 85%;
@@ -295,4 +295,22 @@ body {
     font-size: 300%;
     text-align: center;
     background-color: var(--yellow);
+}
+
+#embed-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.lastpos {
+    font-size: 80%;
+}
+.lastpos-regular {
+    color: grey;
+}
+.lastpos-new {
+    color: var(--orange);
+    font-weight: bold;
 }

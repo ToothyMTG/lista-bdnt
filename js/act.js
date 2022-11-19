@@ -126,7 +126,8 @@ function submit_songs () {
     }
     link += 'submit=Submit'
     //console.log(link)
-    window.location.replace(link)
+    //window.location.replace(link)
+    window.open(link, '_blank').focus();
 }
 
 function switcher () {
