@@ -105,12 +105,20 @@ body {
     float:left;
 }
 
+.song-list-box {
+    border-bottom: 1px solid black;
+}
+.song-list-box-drag {
+    border-top: 4px solid var(--green);
+}
 .song-name {
     height: 5%;
     width: 80%;
     float:left;
     background-color: white;
-    border-bottom: 1px solid black;
+}
+.song-name-after20 {
+    color: grey;
 }
 #footer {
     width: 100%;

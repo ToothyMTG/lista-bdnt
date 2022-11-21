@@ -74,6 +74,28 @@ function render_song_list_items() {
         //div.appendChild(lp)
         var song = document.createElement('div')
         song.classList.add('song-name')
+        if (i >= 20) {
+            song.classList.add('song-name-after20')
+        }
+        song.draggable = 'true'
+        song.value = i
+        song.ondragstart = () => {Din = event.target.value}
+        song.ondragleave = () => {
+            Dout = event.target.value
+            event.target.parentElement.classList.remove('song-list-box-drag')
+        }
+        song.ondrop = () => {
+            Dout = event.target.value
+            event.target.parentElement.classList.remove('song-list-box-drag')
+            arraymove(Song_List,Din,Dout)
+            render_song_list_items()
+        }
+        song.ondragenter = (e) => {
+            e.preventDefault()
+            event.target.parentElement.classList.add('song-list-box-drag')
+
+        }
+        song.ondragover = (e) => {e.preventDefault()}
         song.innerHTML = Song_List[i]
         div.appendChild(song)
     }
