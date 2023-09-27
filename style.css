@@ -15,6 +15,17 @@ body {
     height: 100vh;
     background-color: white;
 }
+#header {
+    width: 100%;
+    height: 10%;
+    background-color: var(--orange);
+    /* float:left; */
+    text-align: center;
+    color: white;
+    background-image: url('img/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 @media (orientation: landscape) {
     #mainframe {
@@ -47,9 +58,10 @@ body {
 @media (orientation: portrait) {
     #mainframe {
         font-size: 1.7vh;
+        width: 200vw;
     }
     #left {
-        width: 100%;
+        width: 50%;
         height: 90%;
         background-color: white;
         float:left;
@@ -57,31 +69,25 @@ body {
         overflow-x: none;
     }    
     #right {
-        width: 100%;
+        width: 50%;
         height: 90%;
         background-color: white;
         float:left;
-        display: none;
+        /* display: none; */
     }
     .song {
         line-height: 180%;
     }
     #header {
         background-size:cover;
+        width: 50%;
+    }
+    .switcher {
+        display: block;
+        
     }
 }
 
-#header {
-    width: 100%;
-    height: 10%;
-    background-color: var(--orange);
-    float:left;
-    text-align: center;
-    color: white;
-    background-image: url('img/banner.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 #header h1 {
     margin: auto;
@@ -289,7 +295,7 @@ body {
 }
 
 .switcher-2 {
-    left: 0vw;
+    left: 100vw;
     border-bottom-left-radius: 100%;
     border-top-left-radius: 100%;
 }
