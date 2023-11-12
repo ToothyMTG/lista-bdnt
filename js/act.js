@@ -142,6 +142,7 @@ function switcher () {
         // left.style.display = 'none'
         // right.style.display = 'block'
         SwitcherState = 2
+        localStorage.SwitcherState = SwitcherState
         return
     }
     if (SwitcherState == 2) {
@@ -151,6 +152,7 @@ function switcher () {
         // left.style.display = 'block'
         // right.style.display = 'none'
         SwitcherState = 1
+        localStorage.SwitcherState = SwitcherState
         return
     }
 }

@@ -3,7 +3,10 @@
 <head>
     <title>Lista Byle do Nowej Trójki</title>
     <link rel="stylesheet" href="style.css">
-    <script>console.clear()</script>
+    <script>
+        console.clear()
+        history.scrollRestoration = 'manual'
+    </script>
     <script src="db/songlist.js"></script>
     <script src="db/db.js"></script>
     <meta charset="utf-8">
@@ -25,9 +28,6 @@
 
     <script>
         load_state()
-        document.onload = () => {
-            window.scrollTo(0,0)
-        }
     </script>
 
 </body>

@@ -67,12 +67,14 @@ body {
         float:left;
         overflow-y: scroll;
         overflow-x: none;
+        margin-top: 10vh;
     }    
     #right {
         width: 50%;
         height: 90%;
         background-color: white;
         float:left;
+        margin-top: 10vh;
         /* display: none; */
     }
     .song {
@@ -80,7 +82,8 @@ body {
     }
     #header {
         background-size:cover;
-        width: 50%;
+        width: 100%;
+        position: fixed;
     }
     .switcher {
         display: block;
@@ -290,9 +293,9 @@ body {
 
 .switcher {
     position: absolute;
-    top: 2.5%;
-    width: 10vw;
-    height: 5%;
+    top: 2.5vh;
+    width: 5vh;
+    height: 5vh;
     background-color: var(--yellow);
 }
 .switcher:hover {
@@ -300,15 +303,18 @@ body {
 }
 
 .switcher-1 {
-    left: 90vw;
-    border-bottom-right-radius: 100%;
-    border-top-right-radius: 100%;
+    left: 95vw;
+    margin: 0;
+    /* border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%; */
+    border-radius: 100%;
 }
 
 .switcher-2 {
     left: 100vw;
-    border-bottom-left-radius: 100%;
-    border-top-left-radius: 100%;
+    /* border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%; */
+    border-radius: 100%;
 }
 
 .lp-change-input {
