@@ -207,20 +207,28 @@ function render_up_down_button (x, y) {
 function render_player (x) {
     var left = document.getElementById('left')
     var player = document.getElementById('player')
+    var ytplayer = document.getElementById('ytplayer')
     id = x.value
     var parr = x.parentElement
     //Debug = parent
     var one = Songs[id].link.split('?')[0]
     var split = one.split('track/')
-    one = SpotifySRC[0] + split[1]
-    var two = player.src.split('?')[1]
-    var newSrc = one + SpotifySRC[1]
-    player.src = newSrc
-    left.insertBefore(player,parr)
-    player.style.display = 'block'
     if (split[1] == undefined) {
+        var ytid = Songs[id].link.split('?v=')[1]
+        var newSRC = YouTubeSRC[0] + ytid 
+        ytplayer.src = newSRC
+        left.insertBefore(ytplayer,parr)
         player.style.display = 'none'
-        x.style.backgroundColor = 'red'
+        player.src = '0'
+        ytplayer.style.display = 'block'
+    } else {
+        one = SpotifySRC[0] + split[1]
+        var newSrc = one + SpotifySRC[1]
+        player.src = newSrc
+        left.insertBefore(player,parr)
+        ytplayer.style.display = 'none'
+        ytplayer.src = '0'
+        player.style.display = 'block'
     }
 }
 
