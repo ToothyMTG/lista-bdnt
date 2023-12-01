@@ -1,7 +1,7 @@
 SongsSRC = [
-"4 Non Blondes|WHAT'S UP|https://open.spotify.com/track/0jWgAnTrNZmOGmqgvHhZEm?si=d691809721df41c9|129",
-"a-ha|LIFELINES|https://open.spotify.com/track/3kPuHm2aXRJvpoKOCtjYI0?si=a330234ace2146df|249",
-"a-ha|SUMMER MOVED ON|https://open.spotify.com/track/6xt09pCFANiwzrTfhyQ1mC?si=45d2d6b961fb4f5c|265",
+"4 Non Blondes|WHAT'S UP|https://open.spotify.com/track/0jWgAnTrNZmOGmqgvHhZEm?si=d691809721df41c9|129|2",
+"a-ha|LIFELINES|https://open.spotify.com/track/3kPuHm2aXRJvpoKOCtjYI0?si=a330234ace2146df|249|-2",
+"a-ha|SUMMER MOVED ON|https://open.spotify.com/track/6xt09pCFANiwzrTfhyQ1mC?si=45d2d6b961fb4f5c|265|0",
 "Adam Clayton, Larry Mullen Jr.|MISSION IMPOSSIBLE THEME|https://www.youtube.com/watch?v=XAYhNHhxN0A|NOWOŚĆ",
 "Adele|HELLO|https://open.spotify.com/track/1Yk0cQdMLx5RzzFTYwmuld?si=fe4a539abb6347b5|NOWOŚĆ",
 "Adele|ROLLING IN THE DEEP|https://open.spotify.com/track/4OSBTYWVwsQhGLF9NHvIbR?si=59137b6494564d9b|230",

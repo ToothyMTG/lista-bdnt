@@ -337,6 +337,8 @@ body {
 
 .lastpos {
     font-size: 80%;
+    width: max-content ;
+    display:inline-block;
 }
 .lastpos-regular {
     color: grey;
@@ -345,3 +347,14 @@ body {
     color: var(--orange);
     font-weight: bold;
 }
+
+.trendpos {
+    width: max-content;
+    margin-left: 5px;
+    font-size: 80%;
+    display:inline-block;
+    color: grey
+}
+
+.trendpos-good {color: lightgreen}
+.trendpos-bad {color: lightcoral}

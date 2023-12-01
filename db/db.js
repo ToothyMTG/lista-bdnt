@@ -19,4 +19,5 @@ for (let i = 0; i < SongsSRC.length; i++) {
     Songs[i].name = base[1] 
     Songs[i].link = base[2]
     Songs[i].lastpos = base[3]
+    Songs[i].trendpos = base[4]
 }
