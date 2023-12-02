@@ -26,7 +26,7 @@ function render_songs() {
         var trendpos = document.createElement('div')
         lastpos.classList.add('lastpos')
         trendpos.classList.add('trendpos')
-        if (Songs[i].lastpos != 'NOWOŚĆ') {
+        if (Songs[i].lastpos != 'Nowość') {
             lastpos.innerHTML = 'Ostatnia pozycja: ' + Songs[i].lastpos
             lastpos.classList.add('lastpos-regular')
             if (Songs[i].trendpos > 0) {
@@ -39,6 +39,9 @@ function render_songs() {
             }
             if (Songs[i].trendpos == 0) {
                 trendpos.innerHTML = '(BZ)'
+            }
+            if (Songs[i].trendpos == "N") {
+                trendpos.innerHTML = '(N)'
             }
         } else {
             lastpos.innerHTML = Songs[i].lastpos
