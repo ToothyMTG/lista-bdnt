@@ -19,7 +19,6 @@ body {
     width: 100%;
     height: 10%;
     background-color: var(--orange);
-    /* float:left; */
     text-align: center;
     color: white;
     background-image: url('img/banner.png');
@@ -75,7 +74,6 @@ body {
         background-color: white;
         float:left;
         margin-top: 10vh;
-        /* display: none; */
     }
     .song {
         line-height: 180%;
@@ -294,7 +292,7 @@ body {
 .switcher {
     position: absolute;
     top: 2.5vh;
-    width: 5vh;
+    width: 5vw;
     height: 5vh;
     background-color: var(--yellow);
 }
@@ -303,18 +301,16 @@ body {
 }
 
 .switcher-1 {
-    left: 95vw;
+    left: 90vw;
     margin: 0;
-    /* border-bottom-right-radius: 100%;
-    border-top-right-radius: 100%; */
-    border-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
 }
 
 .switcher-2 {
-    left: 100vw;
-    /* border-bottom-left-radius: 100%;
-    border-top-left-radius: 100%; */
-    border-radius: 100%;
+    left: 105vw;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
 }
 
 .lp-change-input {

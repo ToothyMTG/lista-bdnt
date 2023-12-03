@@ -26,7 +26,7 @@ function render_songs() {
         var trendpos = document.createElement('div')
         lastpos.classList.add('lastpos')
         trendpos.classList.add('trendpos')
-        if (Songs[i].lastpos != 'Nowość') {
+        if (Songs[i].lastpos != 'NOWOŚĆ') {
             lastpos.innerHTML = 'Ostatnia pozycja: ' + Songs[i].lastpos
             lastpos.classList.add('lastpos-regular')
             if (Songs[i].trendpos > 0) {
@@ -54,7 +54,6 @@ function render_songs() {
         var checkbox = document.createElement('input')
         checkbox.classList.add('checkbox')
         checkbox.type = 'checkbox'
-        //div.appendChild(checkbox)
     }
 }
 
@@ -69,9 +68,6 @@ function select_song (x) {
         parent.classList.add('song-unchecked')
         remove_from_list (base)
     } else {
-        //if (Song_List.length >= voteLimit) {
-        //    return
-        //}
         parent.classList.remove('song-unchecked')
         parent.classList.add('song-checked')
         add_to_list (base)
@@ -89,7 +85,6 @@ function render_song_list_items() {
         right.appendChild(div)
         var lp = document.createElement('div')
         lp.innerHTML = (i+1) + ". "
-        //div.appendChild(lp)
         var song = document.createElement('div')
         song.classList.add('song-name')
         if (i >= 20) {
@@ -228,7 +223,6 @@ function render_player (x) {
     var ytplayer = document.getElementById('ytplayer')
     id = x.value
     var parr = x.parentElement
-    //Debug = parent
     var one = Songs[id].link.split('?')[0]
     var split = one.split('track/')
     if (split[1] == undefined) {
