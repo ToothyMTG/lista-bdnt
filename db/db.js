@@ -1,19 +1,15 @@
-Header = '1. Światowy Top Discorda'
+Header = '2. Światowy Top Discorda'
 Subheader = 'Make Top, not Kek'
 voteMinimum = 5
 voteLimit = 20
 ListHeader = 'Poniżej znajdują się piosenki, które wybrałeś. <big>Poukładaj je w kolejności od najlepszej do najgorszej</big>.'
 Disclaimer = 'Po naciśnięciu przycisku "Wyślij" zostaniesz przeniesiony do ankiety Google Form z wypełnionymi wartościami. Zatwierdź tam swój wybór!'
-RulesLink = 'https://ggle.io/1swiatowy_zasady'
-Source = [
-    'De Staat,Witch Doctor,https://open.spotify.com/track/3rSYcaSCxkKU4SpEVXQgFe?si=333c5bb91bae4d18',
-    'De Staat,Danger,https://open.spotify.com/track/4ndEVf5VBLF6R50eitmnNz?si=331a1089d32d45ab',
-    'De Staat,Dąnger,'
-]
+RulesLink = 'https://ggle.io/2swiatowy_zasady'
+Source = []
 
 SpotifySRC = ['https://open.spotify.com/embed/track/','?utm_source=generator']
-//FormLink = 'https://docs.google.com/forms/d/e/1FAIpQLScNlHd0If-hMJce5DRDqvCAnKm5PyQ4-otEPMJjgAcagXPQQA/viewform?usp=pp_url&entry.1106434568=x&entry.1860024688=x&entry.948511729=x&entry.1138715441=x&entry.413752448=x&entry.1675197954=x&entry.2036348292=x&entry.113315277=x&entry.1191400367=x&entry.1773724668=x&entry.1975955176=x'
-FormLink = 'https://docs.google.com/forms/d/e/1FAIpQLSdV6t2t4JEQ_kgQONhzjbDmt8ibCZrGshN7I0HG22eiw9Pp5A/viewform?usp=pp_url&entry.1803573435=x&entry.1457098524=x&entry.564433624=x&entry.1771242493=x&entry.557893853=x&entry.100034855=x&entry.1640127441=x&entry.1490614041=x&entry.2058265623=x&entry.55983597=x&entry.37449334=x&entry.158783345=x&entry.889583144=x&entry.800164321=x&entry.2122526343=x&entry.673354362=x&entry.215783906=x&entry.1473507198=x&entry.2000052853=x&entry.1702868651=x&entry.1479569680=x'
+YouTubeSRC = ['https://www.youtube.com/embed/']
+FormLink = 'https://docs.google.com/forms/d/e/1FAIpQLScDlGITh29rGgawEFz0lTM3-xZQHJqCyLfg8wXiILmJu5YWhQ/viewform?usp=pp_url&entry.854065643=x&entry.1750333552=x&entry.87041947=x&entry.42329286=x&entry.772739498=x&entry.692112867=x&entry.77851150=x&entry.1766658655=x&entry.462649729=x&entry.2069382705=x&entry.1036102601=x&entry.2041859461=x&entry.1098390096=x&entry.621786291=x&entry.1816600782=x&entry.1766236398=x&entry.212828226=x&entry.956730367=x&entry.70382464=x&entry.1533858805=x&entry.363288178=x'
 
 Songs = []
 for (let i = 0; i < SongsSRC.length; i++) {
@@ -23,4 +19,5 @@ for (let i = 0; i < SongsSRC.length; i++) {
     Songs[i].name = base[1] 
     Songs[i].link = base[2]
     Songs[i].lastpos = base[3]
+    Songs[i].trendpos = base[4]
 }

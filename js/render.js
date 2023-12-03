@@ -15,7 +15,7 @@ function render_songs() {
 
         var name = document.createElement('div')
         name.classList.add('name')
-        name.innerHTML = '<b>' + Songs[i].artist + '</b><br>' + Songs[i].name
+        name.innerHTML = '<b>' + Songs[i].artist + '</b><br>' + Songs[i].name + '<br>'
         name.value = Songs[i].artist + ' - ' + Songs[i].name
         name.onclick = () => {
             select_song(event.target)
@@ -23,20 +23,37 @@ function render_songs() {
         div.appendChild(name)
 
         var lastpos = document.createElement('div')
+        var trendpos = document.createElement('div')
         lastpos.classList.add('lastpos')
+        trendpos.classList.add('trendpos')
         if (Songs[i].lastpos != 'NOWOŚĆ') {
             lastpos.innerHTML = 'Ostatnia pozycja: ' + Songs[i].lastpos
             lastpos.classList.add('lastpos-regular')
+            if (Songs[i].trendpos > 0) {
+                trendpos.innerHTML = '(+' + Songs[i].trendpos + ')'
+                trendpos.classList.add('trendpos-good')
+            }
+            if (Songs[i].trendpos < 0) {
+                trendpos.innerHTML = '(' + Songs[i].trendpos + ')'
+                trendpos.classList.add('trendpos-bad')
+            }
+            if (Songs[i].trendpos == 0) {
+                trendpos.innerHTML = '(BZ)'
+            }
+            if (Songs[i].trendpos == "N") {
+                trendpos.innerHTML = '(N)'
+            }
         } else {
             lastpos.innerHTML = Songs[i].lastpos
             lastpos.classList.add('lastpos-new')
         }
         name.appendChild(lastpos)
 
+        name.appendChild(trendpos)
+        
         var checkbox = document.createElement('input')
         checkbox.classList.add('checkbox')
         checkbox.type = 'checkbox'
-        //div.appendChild(checkbox)
     }
 }
 
@@ -51,9 +68,6 @@ function select_song (x) {
         parent.classList.add('song-unchecked')
         remove_from_list (base)
     } else {
-        //if (Song_List.length >= voteLimit) {
-        //    return
-        //}
         parent.classList.remove('song-unchecked')
         parent.classList.add('song-checked')
         add_to_list (base)
@@ -71,7 +85,6 @@ function render_song_list_items() {
         right.appendChild(div)
         var lp = document.createElement('div')
         lp.innerHTML = (i+1) + ". "
-        //div.appendChild(lp)
         var song = document.createElement('div')
         song.classList.add('song-name')
         if (i >= 20) {
@@ -207,20 +220,27 @@ function render_up_down_button (x, y) {
 function render_player (x) {
     var left = document.getElementById('left')
     var player = document.getElementById('player')
+    var ytplayer = document.getElementById('ytplayer')
     id = x.value
     var parr = x.parentElement
-    //Debug = parent
     var one = Songs[id].link.split('?')[0]
     var split = one.split('track/')
-    one = SpotifySRC[0] + split[1]
-    var two = player.src.split('?')[1]
-    var newSrc = one + SpotifySRC[1]
-    player.src = newSrc
-    left.insertBefore(player,parr)
-    player.style.display = 'block'
     if (split[1] == undefined) {
+        var ytid = Songs[id].link.split('?v=')[1]
+        var newSRC = YouTubeSRC[0] + ytid 
+        ytplayer.src = newSRC
+        left.insertBefore(ytplayer,parr)
         player.style.display = 'none'
-        x.style.backgroundColor = 'red'
+        player.src = '0'
+        ytplayer.style.display = 'block'
+    } else {
+        one = SpotifySRC[0] + split[1]
+        var newSrc = one + SpotifySRC[1]
+        player.src = newSrc
+        left.insertBefore(player,parr)
+        ytplayer.style.display = 'none'
+        ytplayer.src = '0'
+        player.style.display = 'block'
     }
 }
 
