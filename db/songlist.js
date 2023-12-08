@@ -26,7 +26,7 @@ SongsSRC = [
 "Arctic Monkeys|A CERTAIN ROMANCE|https://open.spotify.com/track/0eDQj41kzBhMKQIkTt6OJR|70|N",
 "Arctic Monkeys|DO I WANNA KNOW?|https://open.spotify.com/track/5FVd6KXrgO9B3JPmC8OPst|16|N",
 "Arctic Monkeys|I BET YOU LOOK GOOD ON THE DANCEFLOOR|https://open.spotify.com/track/3DQVgcqaP3iSMbaKsd57l5|71|-20",
-"Ayo, Youssoupha|FIRE|https://open.spotify.com/track/6gYpqMBJUGFxkXEus4PVQL|NOWOŚĆ|N",
+"Ayo|FIRE|https://open.spotify.com/track/7aog3dcZjs0fY1w1mUW9CM|NOWOŚĆ|N",
 "Banco de Gaia|LAST TRAIN TO LHASA|https://open.spotify.com/track/2Joozdms9UpsRjAUdHP8Fo|NOWOŚĆ|N",
 "Band of Horses|THE FUNERAL|https://open.spotify.com/track/5lRzWDEe7UuedU2QPsFg0K|NOWOŚĆ|N",
 "Bang Gang|INSIDE|https://open.spotify.com/track/76fLNi64MTonSw7esUYvno|204|N",
