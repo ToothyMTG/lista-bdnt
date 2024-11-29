@@ -1,4 +1,4 @@
-Header = '2. Światowy Top Discorda'
+Header = '3. Światowy Top Discorda'
 Subheader = 'Make Top, not Kek'
 voteMinimum = 5
 voteLimit = 20

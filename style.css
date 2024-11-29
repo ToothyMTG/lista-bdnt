@@ -89,6 +89,9 @@ body {
     }
 }
 
+button {
+    transition: all 0.5s ease-in-out;
+}
 
 #header h1 {
     margin: auto;
@@ -114,6 +117,10 @@ body {
 
 .song-list-box {
     border-bottom: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+.song-list-box:hover {
+    background-color: var(--yellow);
 }
 .song-list-box-drag {
     border-top: 4px solid var(--green);
@@ -122,11 +129,12 @@ body {
     height: 5%;
     width: 80%;
     float:left;
-    background-color: white;
+    background-color: transparent;
 }
 .song-name-after20 {
     color: grey;
 }
+
 #footer {
     width: 100%;
     height: 5%;
@@ -147,20 +155,26 @@ body {
     margin-bottom: 1%;
     margin-top: 1%;
     display: none;
+    transition: all 0.5s ease-in-out;
+}
+#nick-input:hover {
+    background-color: var(--yellow);
 }
 
 .song {
     width: 98%;
     float:left;
     height:10%;
-    background-color: var(--orange);
+    background-color: transparent;
     margin-left: 1%;
     margin-right: 1%;
     border-bottom: 1px solid black;
     display:flex;
+    transition: all 0.2s ease-in-out;
 }
 .song:hover {
-    background-color: var(--yellow);
+    box-shadow: inset 0 0 0 3px var(--orange);
+    /* background-color: var(--yellow); */
 }
 .song-unchecked {
     background-color: white;
@@ -188,7 +202,7 @@ body {
     float:left;
 }
 .name:active {
-    background-color: var(--orange);
+    /* background-color: var(--orange); */
 }
 .checkbox {
     width: 5%;
@@ -206,12 +220,17 @@ body {
     border-bottom: 1px solid black;
     border-color: var(--orange);
     text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+#search-box:hover {
+    background-color: var(--yellow);
 }
 
 .nav-button {
     width: 25%;
     height: 100%;
     float: left;
+    transition: all 0.5s ease-in-out;
 }
 
 .nav-button:hover {color: white;background-color: var(--orange);}
@@ -271,6 +290,7 @@ body {
     border-bottom: 1px solid var(--orange);
     color:var(--orange);
     margin-bottom: 1%;
+    transition: all 0.5s ease-in-out;
 }
 .rules-link:hover {
     background-color: var(--orange);
@@ -337,10 +357,11 @@ body {
     display:inline-block;
 }
 .lastpos-regular {
-    color: grey;
+    color: black;
+    opacity: 0.5;
 }
 .lastpos-new {
-    color: var(--orange);
+    color: orangered;
     font-weight: bold;
 }
 
@@ -349,8 +370,8 @@ body {
     margin-left: 5px;
     font-size: 80%;
     display:inline-block;
-    color: grey
+    color: black;
 }
 
-.trendpos-good {color: lightgreen}
-.trendpos-bad {color: lightcoral}
+.trendpos-good {color: darkgreen}
+.trendpos-bad {color: darkred}
