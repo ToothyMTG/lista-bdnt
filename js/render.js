@@ -135,6 +135,7 @@ function render_headers () {
     header.appendChild(h1)
     var h2 = document.createElement('h2')
     h2.innerHTML = Subheader
+    h2.id = 'subheader'
     header.appendChild(h2)
 }
 
@@ -329,3 +330,11 @@ function formatter(x,y) {
     }
     console.log(V)
 }
+
+function render_trump() {
+    var x = document.createElement('img')
+    x.src = 'img/trump.png'
+    x.id = 'trump'
+    header.appendChild(x)
+}
+render_trump ()

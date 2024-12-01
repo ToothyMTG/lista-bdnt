@@ -53,6 +53,18 @@ body {
     #header {
         background-size:contain;
     }
+    #trump {
+        position: absolute;
+        margin: auto;
+        top: 100%;
+        left: 0%;
+        transition: all 2s ease-in-out;
+        opacity: 1;
+        z-index: 2;
+    }
+    #subheader:hover + #trump {
+        top: 50%;
+    }
 }
 @media (orientation: portrait) {
     #mainframe {
@@ -85,7 +97,9 @@ body {
     }
     .switcher {
         display: block;
-        
+    }
+    #trump {
+        display: none;
     }
 }
 
@@ -102,6 +116,7 @@ button {
     margin: auto;
     padding: 0;
     line-height: 60%;
+    font-style: oblique;
 }
 
 .right-list {
@@ -375,3 +390,4 @@ button {
 
 .trendpos-good {color: darkgreen}
 .trendpos-bad {color: darkred}
+

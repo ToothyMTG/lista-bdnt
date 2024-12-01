@@ -1,10 +1,10 @@
 Header = '3. Światowy Top Discorda'
-Subheader = 'Make Top, not Kek'
+Subheader = 'Make Top Great Again'
 voteMinimum = 5
 voteLimit = 20
 ListHeader = 'Poniżej znajdują się piosenki, które wybrałeś. <big>Poukładaj je w kolejności od najlepszej do najgorszej</big>.'
 Disclaimer = 'Po naciśnięciu przycisku "Wyślij" zostaniesz przeniesiony do ankiety Google Form z wypełnionymi wartościami. Zatwierdź tam swój wybór!'
-RulesLink = 'https://ggle.io/2swiatowy_zasady'
+RulesLink = 'http://tiny.cc/3swiatowytop_zasady'
 Source = []
 
 SpotifySRC = ['https://open.spotify.com/embed/track/','?utm_source=generator']
