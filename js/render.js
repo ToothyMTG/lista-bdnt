@@ -338,3 +338,12 @@ function render_trump() {
     header.appendChild(x)
 }
 render_trump ()
+
+function renderlolpic () {
+    var x = document.createElement('img')
+    x.src = 'img/stelka.jpg'
+    x.id = 'lolpic'
+    x.classList.add('lolpic')
+    left.appendChild(x)
+}
+renderlolpic ()

@@ -26,7 +26,7 @@ body {
     background-position: center;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     #mainframe {
         font-size: 1.7vh;
     }
@@ -63,10 +63,10 @@ body {
         z-index: 2;
     }
     #subheader:hover + #trump {
-        top: 50%;
+        top: 90%;
     }
 }
-@media (orientation: portrait) {
+@media screen and (orientation: portrait) {
     #mainframe {
         font-size: 1.7vh;
         width: 200vw;
@@ -116,7 +116,7 @@ button {
     margin: auto;
     padding: 0;
     line-height: 60%;
-    font-style: oblique;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .right-list {
@@ -327,7 +327,7 @@ button {
 .switcher {
     position: absolute;
     top: 2.5vh;
-    width: 5vw;
+    width: 8vw;
     height: 5vh;
     background-color: var(--yellow);
 }
@@ -336,7 +336,7 @@ button {
 }
 
 .switcher-1 {
-    left: 90vw;
+    left: 87vw;
     margin: 0;
     border-bottom-right-radius: 100%;
     border-top-right-radius: 100%;
@@ -363,7 +363,6 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-
 }
 
 .lastpos {
@@ -391,3 +390,10 @@ button {
 .trendpos-good {color: darkgreen}
 .trendpos-bad {color: darkred}
 
+.lolpic {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 20%;
+    margin: auto;
+}
