@@ -196,7 +196,8 @@ function render_up_down_button (x, y) {
     var div = document.createElement('div')
     div.classList.add('nav-container')
     var lp = document.createElement('div')
-    lp.innerHTML = y + '.'
+    lp.innerHTML = y + ''
+    lp.id = 'nav-button-lp'
     lp.onclick = () => {render_lp_selector(event.target)}
     lp.classList.add('nav-button')
     var up = document.createElement('div')
@@ -239,6 +240,7 @@ function render_player (x) {
         var newSrc = one + SpotifySRC[1]
         player.src = newSrc
         left.insertBefore(player,parr)
+        // parr.appendChild(player)
         ytplayer.style.display = 'none'
         ytplayer.src = '0'
         player.style.display = 'block'
