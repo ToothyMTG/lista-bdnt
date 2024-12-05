@@ -339,7 +339,6 @@ function render_trump() {
     x.id = 'trump'
     header.appendChild(x)
 }
-render_trump ()
 
 function renderlolpic () {
     var x = document.createElement('img')
