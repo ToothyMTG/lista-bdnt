@@ -26,7 +26,7 @@ body {
     background-position: center;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     #mainframe {
         font-size: 1.7vh;
     }
@@ -53,8 +53,20 @@ body {
     #header {
         background-size:contain;
     }
+    #trump {
+        position: absolute;
+        margin: auto;
+        top: 100%;
+        left: 0%;
+        transition: all 2s ease-in-out;
+        opacity: 1;
+        z-index: 2;
+    }
+    #subheader:hover + #trump {
+        top: 90%;
+    }
 }
-@media (orientation: portrait) {
+@media screen and (orientation: portrait) {
     #mainframe {
         font-size: 1.7vh;
         width: 200vw;
@@ -85,10 +97,15 @@ body {
     }
     .switcher {
         display: block;
-        
+    }
+    #trump {
+        display: none;
     }
 }
 
+button {
+    transition: all 0.5s ease-in-out;
+}
 
 #header h1 {
     margin: auto;
@@ -99,6 +116,7 @@ body {
     margin: auto;
     padding: 0;
     line-height: 60%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .right-list {
@@ -114,6 +132,11 @@ body {
 
 .song-list-box {
     border-bottom: 1px solid black;
+    transition: all 0.2s ease-in-out;
+    cursor:default;
+}
+.song-list-box:hover {
+    background-color: var(--yellow);
 }
 .song-list-box-drag {
     border-top: 4px solid var(--green);
@@ -122,11 +145,13 @@ body {
     height: 5%;
     width: 80%;
     float:left;
-    background-color: white;
+    background-color: transparent;
+    cursor: grab;
 }
 .song-name-after20 {
     color: grey;
 }
+
 #footer {
     width: 100%;
     height: 5%;
@@ -147,20 +172,25 @@ body {
     margin-bottom: 1%;
     margin-top: 1%;
     display: none;
+    transition: all 0.5s ease-in-out;
+}
+#nick-input:hover {
+    background-color: var(--yellow);
 }
 
 .song {
     width: 98%;
     float:left;
     height:10%;
-    background-color: var(--orange);
+    background-color: transparent;
     margin-left: 1%;
     margin-right: 1%;
     border-bottom: 1px solid black;
-    display:flex;
+    align-items: flex-end;
+    transition: all 0.2s ease-in-out;
 }
 .song:hover {
-    background-color: var(--yellow);
+    box-shadow: inset 0 0 0 3px var(--orange);
 }
 .song-unchecked {
     background-color: white;
@@ -187,9 +217,7 @@ body {
     height: 100%;
     float:left;
 }
-.name:active {
-    background-color: var(--orange);
-}
+
 .checkbox {
     width: 5%;
     height: 80%;
@@ -206,15 +234,28 @@ body {
     border-bottom: 1px solid black;
     border-color: var(--orange);
     text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+#search-box:hover {
+    background-color: var(--yellow);
 }
 
 .nav-button {
     width: 25%;
     height: 100%;
     float: left;
+    transition: all 0.2s ease-in-out;
 }
 
-.nav-button:hover {color: white;background-color: var(--orange);}
+.nav-button:hover {
+    box-shadow: inset 0 0 0 2px var(--orange);
+    color: var(--orange)
+}
+
+#nav-button-lp {
+    color: var(--orange)
+}
+
 .nav-container {
     width: 15%;
     float:left;
@@ -225,11 +266,11 @@ body {
 
 #player {
     display:none;
-    width: 98%;
+    width: 58%; 
     height: 13%;
     margin-top: 1%;
     float:left;
-    margin-left: 1%;
+    margin-left: 21%;
     margin-right: 1%;
     margin-bottom: 0%;
 }
@@ -271,6 +312,7 @@ body {
     border-bottom: 1px solid var(--orange);
     color:var(--orange);
     margin-bottom: 1%;
+    transition: all 0.5s ease-in-out;
 }
 .rules-link:hover {
     background-color: var(--orange);
@@ -292,7 +334,7 @@ body {
 .switcher {
     position: absolute;
     top: 2.5vh;
-    width: 5vw;
+    width: 8vw;
     height: 5vh;
     background-color: var(--yellow);
 }
@@ -301,7 +343,7 @@ body {
 }
 
 .switcher-1 {
-    left: 90vw;
+    left: 87vw;
     margin: 0;
     border-bottom-right-radius: 100%;
     border-top-right-radius: 100%;
@@ -328,7 +370,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-
 }
 
 .lastpos {
@@ -337,10 +378,11 @@ body {
     display:inline-block;
 }
 .lastpos-regular {
-    color: grey;
+    color: black;
+    opacity: 0.5;
 }
 .lastpos-new {
-    color: var(--orange);
+    color: orangered;
     font-weight: bold;
 }
 
@@ -349,8 +391,16 @@ body {
     margin-left: 5px;
     font-size: 80%;
     display:inline-block;
-    color: grey
+    color: black;
 }
 
-.trendpos-good {color: lightgreen}
-.trendpos-bad {color: lightcoral}
+.trendpos-good {color: darkgreen}
+.trendpos-bad {color: darkred}
+
+.lolpic {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 20%;
+    margin: auto;
+}

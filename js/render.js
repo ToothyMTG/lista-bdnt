@@ -135,6 +135,7 @@ function render_headers () {
     header.appendChild(h1)
     var h2 = document.createElement('h2')
     h2.innerHTML = Subheader
+    h2.id = 'subheader'
     header.appendChild(h2)
 }
 
@@ -195,7 +196,8 @@ function render_up_down_button (x, y) {
     var div = document.createElement('div')
     div.classList.add('nav-container')
     var lp = document.createElement('div')
-    lp.innerHTML = y + '.'
+    lp.innerHTML = y + ''
+    lp.id = 'nav-button-lp'
     lp.onclick = () => {render_lp_selector(event.target)}
     lp.classList.add('nav-button')
     var up = document.createElement('div')
@@ -329,3 +331,19 @@ function formatter(x,y) {
     }
     console.log(V)
 }
+
+function render_trump() {
+    var x = document.createElement('img')
+    x.src = 'img/trump.png'
+    x.id = 'trump'
+    header.appendChild(x)
+}
+
+function renderlolpic () {
+    var x = document.createElement('img')
+    x.src = 'img/stelka.jpg'
+    x.id = 'lolpic'
+    x.classList.add('lolpic')
+    left.appendChild(x)
+}
+renderlolpic ()

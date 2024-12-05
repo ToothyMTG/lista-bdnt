@@ -10,8 +10,11 @@ function remove_from_list (x) {
 }
 
 function do_search(x) {
-    document.getElementById('player').style.display = 'none'
+    var spotiplayer = document.getElementById('player')
+    spotiplayer.style.display = 'none'
     document.getElementById('ytplayer').style.display = 'none'
+    var lolpic = document.getElementById('lolpic')
+    lolpic.style.display = 'none' 
     var songs = document.getElementsByClassName('song')
     for (let i = 0; i < songs.length; i++) {
         var phrase_check = songs[i].children[1].value
@@ -21,7 +24,16 @@ function do_search(x) {
         else if (phrase_upper.includes(x) == 1) {songs[i].style.display = 'block'} 
         else if (phrase_check.includes(x) == 1) {songs[i].style.display = 'block'} 
         else {songs[i].style.display = 'none'}
-
+        if (x.includes('depeche') == 1) {lolpic.style.display = 'block';lolpic.src = 'img/stelka.jpg'}
+        if (x.includes('floyd') == 1) {lolpic.style.display = 'block';lolpic.src = 'img/boomer.jpeg'}
+        if (x == 'ptaki') {spotiplayer.style.display = 'block';spotiplayer.src = SpotifySRC[0] + '63rIccMK9EmP4t1Bg5irzK?si=b513c140e5524ec8' + SpotifySRC[1]}
+        if (x == 'zaz') {lolpic.style.display = 'block';lolpic.src = 'img/bera.jpg'}
+        if (x.includes('savoretti') == 1) {lolpic.style.display = 'block';lolpic.src = 'img/italiano.webp'}
+        if (x.includes('pretender') == 1) {lolpic.style.display = 'block';lolpic.src = 'img/aykm.jpeg'}
+        if (x == 'archive') {lolpic.style.display = 'block';lolpic.src = 'img/archive.gif'}
+        if (x == 'dua lipa') {lolpic.style.display = 'block';lolpic.src = 'img/dua.gif'}
+        if (x.includes('harry') == 1) {lolpic.style.display = 'block';lolpic.src = 'img/ola.jpg'}
+        if (x == 'najtańszy redaktor') {lolpic.style.display = 'block';lolpic.src = 'img/tubis.jpeg'}
     }
 }
 
