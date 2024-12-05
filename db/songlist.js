@@ -32,7 +32,7 @@ SongsSRC = [
 "Bang Gang|INSIDE|https://open.spotify.com/track/76fLNi64MTonSw7esUYvno|231|-27",
 "Beastie Boys|SABOTAGE|https://open.spotify.com/track/0Puj4YlTm6xNzDDADXHMI9|19|-6",
 "Beirut|POSTCARDS FROM ITALY|https://open.spotify.com/track/7H0UxIN751StFi2tznmHlg|164|30",
-"Believer|IMAGIEN DRAGONS|https://open.spotify.com/track/0pqnGHJpmpxLKifKRmU6WP|NOWOŚĆ|N",
+"Believer|IMAGINE DRAGONS|https://open.spotify.com/track/0pqnGHJpmpxLKifKRmU6WP|NOWOŚĆ|N",
 "Belleruche|ANYTHING YOU WANT - NOT THAT|https://open.spotify.com/track/6sI5m6cabkKWBuDh0kXMKk|181|N",
 "Beth Hart|CAUGHT OUT IN THE RAIN|https://open.spotify.com/track/7nAlg457jECNXuwbxMRkPB|150|-99",
 "Birdy|WINGS - WINGS - ACOUSTIC|https://open.spotify.com/track/1YyWhuvE5ZKN9S295kuVZb|NOWOŚĆ|N",
