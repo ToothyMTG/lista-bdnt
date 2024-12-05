@@ -240,7 +240,6 @@ function render_player (x) {
         var newSrc = one + SpotifySRC[1]
         player.src = newSrc
         left.insertBefore(player,parr)
-        // parr.appendChild(player)
         ytplayer.style.display = 'none'
         ytplayer.src = '0'
         player.style.display = 'block'
