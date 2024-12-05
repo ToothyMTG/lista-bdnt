@@ -31,7 +31,6 @@ function do_search(x) {
         if (x.includes('savoretti') == 1) {lolpic.style.display = 'block';lolpic.src = 'img/italiano.webp'}
         if (x.includes('pretender') == 1) {lolpic.style.display = 'block';lolpic.src = 'img/aykm.jpeg'}
         if (x == 'archive') {lolpic.style.display = 'block';lolpic.src = 'img/archive.gif'}
-        if (x == 'jamiroquai') {lolpic.style.display = 'block';lolpic.src = 'img/trzask.jpeg'}
         if (x == 'dua lipa') {lolpic.style.display = 'block';lolpic.src = 'img/dua.gif'}
         if (x.includes('harry') == 1) {lolpic.style.display = 'block';lolpic.src = 'img/ola.jpg'}
         if (x == 'najtańszy redaktor') {lolpic.style.display = 'block';lolpic.src = 'img/tubis.jpeg'}
