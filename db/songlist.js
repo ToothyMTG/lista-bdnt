@@ -286,7 +286,6 @@ SongsSRC = [
 "The Strokes|ODE TO THE METS|https://open.spotify.com/track/1BLOVHYYlH4JUHQGcpt75R|NOWOŚĆ|N",
 "The Verve|BITTER SWEET SYMPHONY|https://open.spotify.com/track/57iDDD9N9tTWe75x6qhStw|197|-113",
 "The Weeknd|BLINDING LIGHTS|https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b|102|N",
-"The Weeknd|BLINDING LIGHTS|https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b|NOWOŚĆ|N",
 "The White Stripes|SEVEN NATION ARMY|https://open.spotify.com/track/3dPQuX8Gs42Y7b454ybpMR|3|1",
 "The XX|INTRO|https://open.spotify.com/track/2usrT8QIbIk9y0NEtQwS4j|NOWOŚĆ|N",
 "The xx|ISLANDS|https://open.spotify.com/track/0Rqwa6i410IwhTiugt6vXi|NOWOŚĆ|N",
