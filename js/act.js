@@ -115,7 +115,8 @@ function switcher () {
     if (SwitcherState == 1) {
         switcherr.classList.remove('switcher-1')
         switcherr.classList.add('switcher-2')
-        window.scrollTo(document.body.scrollWidth, 0)
+        left.style.display = 'none'
+        right.style.display = 'block'
         SwitcherState = 2
         localStorage.SwitcherState = SwitcherState
         return
@@ -123,7 +124,8 @@ function switcher () {
     if (SwitcherState == 2) {
         switcherr.classList.remove('switcher-2')
         switcherr.classList.add('switcher-1')
-        window.scrollTo(0,0)
+        left.style.display = 'block'
+        right.style.display = 'none'
         SwitcherState = 1
         localStorage.SwitcherState = SwitcherState
         return
