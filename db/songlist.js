@@ -136,7 +136,6 @@ SongsSRC = [
 "Joe Bonamassa|DRIVE|https://open.spotify.com/track/2knqdlYKjS0J27lYyyRllU|66|70",
 "Joe Bonamassa, Beth Hart|I'LL TAKE CARE OF YOU|https://open.spotify.com/track/644oQEcMNmA3ABAOrfY7k3|67|N",
 "Johnny Cash|HURT|https://open.spotify.com/track/5rpRzNcJZqKQXk9PIjreB6|6|11",
-"Journey|DON'T STOP BELIEVIN'|https://open.spotify.com/track/77NNZQSqzLNqh2A9JhLRkg|NOWOŚĆ|N",
 "Judas Priest|LIGHTNING STRIKE|https://open.spotify.com/track/6qopop1Rc9r1RjEIBQhc8d|215|N",
 "Junior Senior|MOVE YOUR FEET|https://open.spotify.com/track/4DX82Vc8qAH4jJPvKxvwg6|NOWOŚĆ|N",
 "Katie Melua|I CRIED FOR YOU|https://open.spotify.com/track/1ceEZGpkzqyvXrsyoRItp0|NOWOŚĆ|N",
