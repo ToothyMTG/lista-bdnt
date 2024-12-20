@@ -206,7 +206,7 @@ SongsSRC = [
 "Pearl Jam|JUST BREATHE|https://open.spotify.com/track/6i81qFkru6Kj1IEsB7KNp2|122|-61",
 "Phil Collins|YOU'LL BE IN MY HEART|https://open.spotify.com/track/4Y8vb1uy9IjM2V1hqvrAid|26|N",
 "Pink Floyd|HIGH HOPES|https://open.spotify.com/track/236mI0lz8JdQjlmijARSwY|2|-1",
-"Placebo|ASHTRAY HEART|https://open.spotify.com/track/2yYASbXnAV71CLbNY1HCWf|163|44",
+"Placebo|ASHTRAY HEART|https://open.spotify.com/track/3FqGGjtL4tbZYa7IFd6kYN|163|44",
 "Placebo|THE BITTER END|https://open.spotify.com/track/2yYASbXnAV71CLbNY1HCWf|43|53",
 "Porcupine Tree|ANESTHETIZE|https://open.spotify.com/track/2VvUor8pk8HOR9cb5iC84z|41|40",
 "Porcupine Tree|LIGHTBULB SUN|https://open.spotify.com/track/04Vcsh7Cexb2bmVpS7FLrR|229|N",
