@@ -43,6 +43,7 @@ body {
         background-color: white;
         display: block;
         height: 90%;
+        overflow: auto;
     }
     .song {
         line-height: 180%;
@@ -87,6 +88,8 @@ body {
         float:left;
         margin-top: 10vh;
         display: none;
+        font-size: 150%;
+        overflow: auto;
     }
     .song {
         line-height: 180%;
@@ -117,7 +120,6 @@ button {
     margin: auto;
     padding: 0;
     line-height: 60%;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .right-list {
@@ -125,7 +127,7 @@ button {
     margin: 2.5%;
     width: 95%;
     overflow-y: auto; 
-    height: 60%;
+    /* height: 60%; */
 }
 .right-list div {
     float:left;
@@ -296,6 +298,7 @@ button {
     border: 0;
     border-top: 1px solid var(--orange);
     border-bottom: 1px solid var(--orange);
+    margin-bottom: 10%;
 }
 
 #preheader {
