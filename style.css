@@ -25,6 +25,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.nav-container {
+    width: 15%;
+    float:left;
+    height: 100%;
+    text-align: center;
+    margin-right: 1%;
+}
+.song-name {
+    height: 5%;
+    width: 80%;
+    float:left;
+    background-color: transparent;
+    cursor: grab;
+}
 
 @media screen and (orientation: landscape) {
     #mainframe {
@@ -43,6 +57,7 @@ body {
         background-color: white;
         display: block;
         height: 90%;
+        overflow: auto;
     }
     .song {
         line-height: 180%;
@@ -87,6 +102,8 @@ body {
         float:left;
         margin-top: 10vh;
         display: none;
+        font-size: 150%;
+        overflow: auto;
     }
     .song {
         line-height: 180%;
@@ -101,6 +118,13 @@ body {
     }
     #trump {
         display: none;
+    }
+    .nav-container {
+        width: 100%;
+    }
+    .song-name {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -117,7 +141,6 @@ button {
     margin: auto;
     padding: 0;
     line-height: 60%;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .right-list {
@@ -125,7 +148,7 @@ button {
     margin: 2.5%;
     width: 95%;
     overflow-y: auto; 
-    height: 60%;
+    /* height: 60%; */
 }
 .right-list div {
     float:left;
@@ -141,13 +164,6 @@ button {
 }
 .song-list-box-drag {
     border-top: 4px solid var(--green);
-}
-.song-name {
-    height: 5%;
-    width: 80%;
-    float:left;
-    background-color: transparent;
-    cursor: grab;
 }
 .song-name-after20 {
     color: grey;
@@ -257,13 +273,6 @@ button {
     color: var(--orange)
 }
 
-.nav-container {
-    width: 15%;
-    float:left;
-    height: 100%;
-    text-align: center;
-    margin-right: 1%;
-}
 
 #player {
     display:none;
@@ -296,6 +305,7 @@ button {
     border: 0;
     border-top: 1px solid var(--orange);
     border-bottom: 1px solid var(--orange);
+    margin-bottom: 10%;
 }
 
 #preheader {
