@@ -25,6 +25,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.nav-container {
+    width: 15%;
+    float:left;
+    height: 100%;
+    text-align: center;
+    margin-right: 1%;
+}
+.song-name {
+    height: 5%;
+    width: 80%;
+    float:left;
+    background-color: transparent;
+    cursor: grab;
+}
 
 @media screen and (orientation: landscape) {
     #mainframe {
@@ -105,6 +119,13 @@ body {
     #trump {
         display: none;
     }
+    .nav-container {
+        width: 100%;
+    }
+    .song-name {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 button {
@@ -143,13 +164,6 @@ button {
 }
 .song-list-box-drag {
     border-top: 4px solid var(--green);
-}
-.song-name {
-    height: 5%;
-    width: 80%;
-    float:left;
-    background-color: transparent;
-    cursor: grab;
 }
 .song-name-after20 {
     color: grey;
@@ -259,13 +273,6 @@ button {
     color: var(--orange)
 }
 
-.nav-container {
-    width: 15%;
-    float:left;
-    height: 100%;
-    text-align: center;
-    margin-right: 1%;
-}
 
 #player {
     display:none;
