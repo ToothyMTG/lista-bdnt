@@ -1,4 +1,6 @@
 SongsSRC = [
+"a-ha|LIFELINES|https://open.spotify.com/track/3kPuHm2aXRJvpoKOCtjYI0|119|7",
+"a-ha|SUMMER MOVED ON|https://open.spotify.com/track/6xt09pCFANiwzrTfhyQ1mC|120|128",
 "A Perfect Circle|HOURGLASS|https://open.spotify.com/track/0C9WmefwWNx1R9P7JHKLwJ|152|N",
 "Adam Clayton, Larry Mullen Jr.|MISSION IMPOSSIBLE THEME|https://open.spotify.com/track/2BVueDW1REKHYpWkB9KbDF|129|16",
 "Adele|ROLLING IN THE DEEP|https://open.spotify.com/track/4OSBTYWVwsQhGLF9NHvIbR|255|-65",
@@ -324,6 +326,4 @@ SongsSRC = [
 "Zaz|IMAGINE|https://open.spotify.com/track/00N4nzw54Xz4ZwtcDzqHJK|NOWOŚĆ|N",
 "Zaz|SI JAMAIS J'OUBLIE|https://open.spotify.com/track/3iqnep2xpPuvnNqVTpteKa|NOWOŚĆ|N",
 "Zutomayo|TAIDADA|https://open.spotify.com/track/7xpUWbv1UfcRQJEOGabeaJ|NOWOŚĆ|N",
-"a-ha|LIFELINES|https://open.spotify.com/track/3kPuHm2aXRJvpoKOCtjYI0|119|7",
-"a-ha|SUMMER MOVED ON|https://open.spotify.com/track/6xt09pCFANiwzrTfhyQ1mC|120|128",
 ]
