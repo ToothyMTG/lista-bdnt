@@ -216,7 +216,7 @@ SongsSRC = [
 "Pearl Jam|GIVEN TO FLY|https://open.spotify.com/track/3vL9lPWBuv0ZR3c5YmdhDl|214|27",
 "Pearl Jam|JUST BREATHE|https://open.spotify.com/track/6i81qFkru6Kj1IEsB7KNp2|223|-94",
 "Phil Collins|YOU'LL BE IN MY HEART|https://open.spotify.com/track/4Y8vb1uy9IjM2V1hqvrAid|78|-51",
-"Placebo|ASHTRAY HEART|https://open.spotify.com/track/2yYASbXnAV71CLbNY1HCWf|200|-35",
+"Placebo|ASHTRAY HEART|https://open.spotify.com/track/3FqGGjtL4tbZYa7IFd6kYN|200|-35",
 "Placebo|BEAUTIFUL JAMES|https://open.spotify.com/track/4yjKZ7rNGjYRmIjqXVJqGm|NOWOŚĆ|N",
 "Placebo|THE BITTER END|https://open.spotify.com/track/2yYASbXnAV71CLbNY1HCWf|181|-138",
 "Porcupine Tree|ANESTHETIZE|https://open.spotify.com/track/2VvUor8pk8HOR9cb5iC84z|64|-19",
