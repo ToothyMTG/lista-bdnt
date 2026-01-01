@@ -415,3 +415,61 @@ button {
     width: 20%;
     margin: auto;
 }
+
+
+/* STRONA WYNIKÓW */
+
+.year-btn {
+    width: 20vw;
+    height: 5vh;
+    float: left;
+    border: 0;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+.year-btn:hover {
+    background-color: var(--yellow);
+}   
+
+#result-listbox {
+    width: 100%;
+    height: 85vh;
+    background-color: var(--yellow);
+    overflow-y: auto;
+}
+
+.result-songdiv {
+    width: 100%;
+    height: 5vh;
+    border-bottom: 1px solid black;
+    float: left;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.result-song-name {
+    width: 90%;
+    float: left;
+}
+.result-pos {
+    width: 10%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.result-lastpos {
+    float: left;
+}   
+.result-trendpos {
+    float: left;
+    margin-left: 1%;
+}   
+.result-trend-new {
+    color: var(--orange);
+    font-weight: bold;
+}
