@@ -65,10 +65,10 @@ function load_results_year(year) {
         trendposdiv.classList.add('result-trendpos')
         var trendpos
         if (res[i][2] == '0') {trendpos = 'BZ'}
-        if (res[i][2] == 'N') {trendpos = 'N'}
         if (parseInt(res[i][2]) > 0) {trendpos = '+' + res[i][2]}
         if (parseInt(res[i][2]) < 0) {trendpos = res[i][2]}
         trendposdiv.innerHTML = ' (' + trendpos + ')'
+        if (res[i][2] == 'N') {trendposdiv.innerHTML = ''}
         songdiv.appendChild(pos)
         songdiv.appendChild(name)
         songdiv.appendChild(lastposdiv)

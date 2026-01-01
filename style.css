@@ -452,6 +452,7 @@ button {
 .result-song-name {
     width: 90%;
     float: left;
+    font-size: 120%;
 }
 .result-pos {
     width: 10%;
@@ -464,10 +465,12 @@ button {
 
 .result-lastpos {
     float: left;
+    font-size: 80%;
 }   
 .result-trendpos {
     float: left;
     margin-left: 1%;
+    font-size: 80%;
 }   
 .result-trend-new {
     color: var(--orange);
