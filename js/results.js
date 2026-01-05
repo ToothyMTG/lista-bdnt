@@ -1,5 +1,5 @@
 ResultsHeader = 'Lista BDNT - Wyniki'
-YearAvail = ["0.Edycja","1. Edycja","2. Edycja","3. Edycja","4. Edycja"]
+YearAvail = ["0.Edycja","1. Edycja","2. Edycja","3. Edycja"]
 var mainDiv = document.getElementById('maindiv')
 
 window.onload = function() {
@@ -39,7 +39,13 @@ function render_result_list() {
 }
 
 function load_results_year(year) {
+    var buttons = document.getElementsByClassName('year-btn')
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('year-btn-active')
+    }
+    buttons[year - 1].classList.add('year-btn-active')
     var listbox = document.getElementById('result-listbox')
+    listbox.scrollTop = 0
     listbox.innerHTML = ''
     var res = Results[year - 1]
     for (let i = 0; i < res.length; i++) {
@@ -65,8 +71,8 @@ function load_results_year(year) {
         trendposdiv.classList.add('result-trendpos')
         var trendpos
         if (res[i][2] == '0') {trendpos = 'BZ'}
-        if (parseInt(res[i][2]) > 0) {trendpos = '+' + res[i][2]}
-        if (parseInt(res[i][2]) < 0) {trendpos = res[i][2]}
+        if (parseInt(res[i][2]) > 0) {trendpos = '+' + res[i][2];trendposdiv.classList.add('result-trend-up')}
+        if (parseInt(res[i][2]) < 0) {trendpos = res[i][2];trendposdiv.classList.add('result-trend-down')}
         trendposdiv.innerHTML = ' (' + trendpos + ')'
         if (res[i][2] == 'N') {trendposdiv.innerHTML = ''}
         songdiv.appendChild(pos)
