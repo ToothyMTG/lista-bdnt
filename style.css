@@ -415,3 +415,105 @@ button {
     width: 20%;
     margin: auto;
 }
+
+
+/* STRONA WYNIKÓW */
+
+#maindiv {
+    width: 100vw;
+    height: 90vh;
+    background-color: white;
+    top:10vh;
+    left: 0;
+    overflow: hidden;
+    position: absolute  ;
+}
+
+#year-div {
+    width: 100%;
+    height: 5vh;
+    border-bottom: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.year-btn {
+    width: 25vw;
+    height: 5vh;
+    float: left;
+    border: 0;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+.year-btn:hover {
+    background-color: var(--yellow);
+}   
+.year-btn-active {
+    background-color: var(--green);
+}   
+
+#result-listbox {
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+.result-songdiv {
+    width: 100%;
+    height: 5vh;
+    border-bottom: 1px solid black;
+    float: left;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+.result-songdiv:hover {
+    background-color: var(--yellow);
+}   
+
+.result-song-name {
+    width: 90%;
+    float: left;
+    font-size: 120%;
+}
+.result-pos {
+    width: 10%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.result-lastpos {
+    float: left;
+    font-size: 80%;
+}   
+.result-trendpos {
+    float: left;
+    margin-left: 1%;
+    font-size: 80%;
+}   
+.result-trend-new {
+    color: var(--orange);
+    font-weight: bold;
+}
+.result-trend-up {
+    color: darkgreen;
+    font-weight: bold;
+}
+.result-trend-down {
+    color: darkred;
+    font-weight: bold;
+}
+@media screen and (orientation: portrait) {
+    .year-btn {font-size: 100%;}
+    .result-pos {font-size: 100%;}
+    .result-song-name {font-size: 90%;}
+    .result-lastpos {font-size: 70%;}
+    .result-trendpos {font-size: 70%;}
+}
